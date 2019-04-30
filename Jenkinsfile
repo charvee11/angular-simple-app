@@ -16,7 +16,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                  sh 'echo "machine https://github.com/charvee11/nodejsapp.git" >> $WORKSPACE/.netrc'
+                  sh 'echo "machine https://github.com/charvee11/angular-simple-app.git" >> $WORKSPACE/.netrc'
                   sh 'echo "login $GIT_USER" >> $WORKSPACE/.netrc'
                   sh 'echo "password $GIT_PASS" >> $WORKSPACE/.netrc'
                   sh 'echo "protocol http" >> $WORKSPACE/.netrc'
