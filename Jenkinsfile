@@ -22,6 +22,7 @@ pipeline {
                   sh 'echo "protocol http" >> $WORKSPACE/.netrc'
                   sh 'chmod 600 $WORKSPACE/.netrc'
                   sh 'git clone -b $BRANCH_NAME $GIT_REPO'
+                sh 'cd angular-simple-app'
                 sh 'echo Code Building started......'
                 sh 'ls'
                  sh 'chmod a+rwx build.sh'
