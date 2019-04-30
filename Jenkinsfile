@@ -45,6 +45,13 @@ pipeline {
  //
  //         }
  //       }
+   stage('Git') {
+            steps {
+                step([$class: 'WsCleanup'])
+                checkout scm
+            }
+        }
+
      }  
 }    
 
